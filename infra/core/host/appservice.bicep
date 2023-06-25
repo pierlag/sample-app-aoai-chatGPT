@@ -96,7 +96,7 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
     name: 'authsettingsV2'
     properties: {
       globalValidation: {
-        requireAuthentication: true
+        requireAuthentication: false
         unauthenticatedClientAction: 'RedirectToLoginPage'
         redirectToProvider: 'azureactivedirectory'
       }
